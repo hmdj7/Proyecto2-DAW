@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+.background-slider {
+    width: 100%;
+    height: calc(100vh - 125px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: changeBackground 15s infinite;
+    margin-top: 25px;
+}
+
+@keyframes changeBackground {
+    0%, 28% {
+        background-image: url('/img/fondozelda.webp'); 
+    }
+    33%,61% {
+        background-image: url('/img/fondohfw.jpg'); 
+    }
+    66%,95% {
+        background-image: url('/img/fondohalo.jpg'); 
+    }
+    100% {
+        background-image: url('/img/fondozelda.webp'); 
+    }
+}
+
+.contenedor {
+    height: calc(100vh - 200px);
+    align-content: center;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedor h1 {
+    font-size: 3.65rem; /* 60px */
+    font-weight: 700;
+    margin-bottom: 2.5rem; /* 40px */
+    color: #fff;
+    word-wrap: break-word;
+    max-width: 100%;
+    text-shadow: 0 0 5px #ec3eec, 0 0 10px #59046e, 0 0 15px #59046e, 0 0 20px #59046e;
+}
+
+.contenedor p {
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    margin-bottom: 1.25rem; /* 20px */
+    color: #fff;
+    max-width: 100%;
+    text-shadow: 0 0 3px #130101, 0 0 6px #010913, 0 0 9px #000c0b; 
+}
+.contenedor a {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem; 
+    color: #fff;
+    max-width: 100%;
+    text-shadow: 0 0 3px #130101, 0 0 6px #010913, 0 0 9px #000c0b; 
+}
+.anim-banner {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: moveup 1s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    color: #fff;
+    background-color: #171427;
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+    position: static;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    font-family: 'Gtek Nova', sans-serif;
+    font-size: 1rem; /* 1.5rem */
+    color: #fff;
+    font-weight: 400;
+}
+
+.texto {
+    font-size: 0.875rem; /* 1rem */
+    color: #fff;
+    font-weight: 400;
+}
+
+#cart-icon, #user-icon {
+    font-size: 1rem; /* 1.2rem */
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #171427;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 0.625rem 1rem; /* 10px 16px */
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover { 
+    background-color: #f1f1f1;
+    color: #171427;
+}
+
+/* Ajustes para el menú desplegable en dispositivos móviles */
+@media (max-width: 700px){
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #171427;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .dropdown-content a {
+        color: #fff;
+        padding: 0.625rem 1rem; /* 10px 16px */
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        color: #171427;
+    }
+    
+    .contenedor h1 {
+        font-size: 2rem; /* 60px */
+        font-weight: 700;
+        margin-bottom: 1.5rem; /* 40px */
+        color: #fff;
+        word-wrap: break-word;
+        text-shadow: 0 0 5px #ec3eec, 0 0 10px #59046e, 0 0 15px #59046e, 0 0 20px #59046e;
+    }
+    
+    .contenedor p {
+        font-size: 1rem; /* 16px */
+        font-weight: 400;
+        margin-bottom: 1.25rem; /* 20px */
+        color: #fff;
+        max-width: 100%;
+        text-shadow: 0 0 3px #130101, 0 0 6px #010913, 0 0 9px #000c0b; 
+    }
+}

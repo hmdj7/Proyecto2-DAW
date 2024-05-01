@@ -1,0 +1,69 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            scroll-padding-top: 2rem;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            min-height: 100vh;
+            color: var(--text-color);
+            min-height: 100vh;
+            background-color: #171427; /* Ajuste para fondo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor {
+            width: 50vw;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contenedor h1 {
+            font-size: 2rem; /* Ajuste de tamaño de fuente */
+            font-weight: 700;
+            margin-bottom: 1.5rem; /* Ajuste de margen inferior */
+            color: #59046e; /* Ajuste de color de texto */
+            text-align: center; /* Centrar el texto */
+        }
+
+        .contenedor input[type="text"],
+        .contenedor input[type="password"],
+        .contenedor input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px; /* Ajuste de margen inferior */
+            border: none;
+            border-radius: 5px;
+            background-color: #f7f7f7; /* Ajuste de color de fondo */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Ajuste de sombra */
+            font-size: 1rem; /* Ajuste de tamaño de fuente */
+        }
+
+        .contenedor button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #59046e; /* Ajuste de color de fondo */
+            color: #fff;
+            font-size: 1rem; /* Ajuste de tamaño de fuente */
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+        }
+
+        .contenedor button[type="submit"]:hover {
+            background-color: #480365; /* Cambio de color de fondo al pasar el ratón */
+        }

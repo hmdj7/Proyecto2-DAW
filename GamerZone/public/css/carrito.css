@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            scroll-padding-top: 2rem;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            min-height: 100vh;
+            color: var(--text-color);
+            background-color: #171427;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor {
+            width: 80%;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contenedor h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #333;
+            text-align: center;
+        }
+        .producto {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .producto img {
+            width: 150px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .producto .info {
+            flex: 1;
+        }
+
+        .producto .info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .producto .info p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .carrito {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .total {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 10px;
+            text-align: right;
+        }
+        .contenedor button[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 7px;
+            background-color: #ec3eec; 
+            color: #fff;
+            font-size: 1rem; 
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contenedor button[type="submit"]:hover {
+            background-color: #59046e; 
+        }
